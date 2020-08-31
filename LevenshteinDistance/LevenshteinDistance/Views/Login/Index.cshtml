@@ -1,0 +1,37 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Levenshtein Distance</title>
+</head>
+<body>
+@using (Html.BeginForm("Index", "Login", FormMethod.Get, new { @id = "frmLogin" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div id="divLogin"> 
+        @Html.Partial("_LoginView")        
+    </div>
+
+    <div id="divDashboard" style="display:none;">
+        <table>
+            <tr>
+                <td valign="top">@Html.Partial("_DashboardView")</td>
+                <td valign="top" id="tdMatrix">@Html.Partial("_MatrixView")</td>
+            </tr>
+        </table>        
+    </div>
+  
+   <script src="@Url.Content("~/Scripts/jquery-1.10.2.min.js")"></script>
+   <script src="@Url.Content("~/Scripts/jquery.validate.min.js")"></script>
+   <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")"></script>
+   <script src="@Url.Content("~/Scripts/levenshtein-distance.js")"></script>   
+}
+</body>
+</html>

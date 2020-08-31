@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background: #554;
+        }
+
+        .content {
+            max-width: 100%;            
+            background: lightyellow;
+            padding: 20px;            
+            border-radius: 10px;
+        }
+
+        input {
+            max-width: 100%;
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <table cellpadding="1" cellspacing="5">
+            <tr>
+                <th align="right">Input Value1</th>
+                <td tabindex="0"><input type="text" id="txtVal1" name="value1" class="requrd"></td>
+            </tr>
+            <tr>
+                <th align="right">Input Value2</th>
+                <td tabindex="1"><input type="text" id="txtVal2" name="value2" class="requrd"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td tabindex="2"><input type="button" value="Calculate Distance" style="width: 100%;" id="btnCalculate"></td>
+            </tr>
+            <tr id="trCalDistance" style="display:none;">
+                <td colspan="2" align="center"><label style="font-weight:bold">Calculated Distance is : </label><span id="spnCalculatedDistance" style="font-weight:bold; color:forestgreen;"></span></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
+

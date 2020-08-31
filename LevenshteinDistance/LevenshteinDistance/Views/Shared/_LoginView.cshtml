@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background: #554;
+        }
+
+        input {
+            max-width: 100%;
+            border: 1px solid green;
+        }
+
+        .highlight {
+            border: 1px solid red !important;
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <div style="max-width: 22%; margin: auto; background: lightyellow; padding: 20px; margin-top: 20%; border-radius: 10px;">
+        <table cellpadding="1" cellspacing="5">
+            <tr>
+                <th align="right">User Name</th>
+                <td tabindex="0"><input type="text" class="requrd" id="txtName" name="UserName"></td>
+            </tr>
+            <tr>
+                <th align="right">Password</th>
+                <td tabindex="1"><input type="password" class="requrd" id="txtPassword" name="Password"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td tabindex="2"><input type="button" value="Login" style="width: 100%;" id="btnLogin"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
